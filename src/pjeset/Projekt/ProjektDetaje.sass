@@ -1,0 +1,72 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+
+#ProjektDetaje
+    width: 100%
+    @extend %flex-between
+    flex-direction: column
+    padding: 60px 0
+    .përmbajtja
+        width: 960px
+        @media screen and (max-width: 1000px)
+            width: 100%
+        .head_photos
+            width: 100%
+            %flex-start-start
+            figure
+                display: flex
+                flex: 0 1 auto
+                margin: 20px 0
+                padding: 20px 0
+                overflow: hidden
+                img
+                    width: 100%
+                    object-fit: cover
+        table
+            width: 100%
+            margin: 0 auto
+            border: 1px solid #ccc
+            padding: 20px
+            @media screen and (max-width: 1000px)
+                width: 90%
+            td, th 
+                font-size: 1.2em
+                padding: 7px
+                &:nth-child(1)
+                    width: 25%
+                    vertical-align: top
+                    text-align: left
+                &:nth-child(2)
+                    text-align: left
+                    font-weight: 700
+        p
+            text-align: left
+            padding: 0
+            margin: 0
+            font-size: 1.2em
+        .body_photos
+            width: 100%
+            margin-top: 50px
+            %flex-start-start
+            flex-direction: column
+            figure
+                display: block
+                width: 100%
+                margin: 20px 0
+                padding: 20px 0
+                overflow: hidden
+                &:nth-child(odd)
+                    img 
+                        float: left
+                &:nth-child(even)
+                    img 
+                        float: right
+                img
+                    width: 60%
+                    @media screen and (max-width: 1000px)
+                        width: 100%
+                        clear: both
+        
+
+            
+                

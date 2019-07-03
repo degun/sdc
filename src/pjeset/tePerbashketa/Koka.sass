@@ -1,0 +1,44 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+    
+.Koka
+    height: 600px
+    width: 100%
+    background-color: $bluebukur
+    position: relative
+    .content
+        position: absolute
+        height: 100%
+        width: 100%
+        @extend %flex-center
+        flex-direction: column
+        text-align: center
+        h1.titulli
+            font-family: 'Brandon Grotesque', Verdana, Geneva, Tahoma, sans-serif
+            color: white
+            width: 70%
+            line-height: 1
+            font-weight: 700
+            font-size: 4em
+            z-index: 2
+            padding: 20px
+            @media screen and (max-width: 1000px)
+                font-size: 2.5em
+        h4 
+            font-family: 'Brandon Grotesque', Verdana, Geneva, Tahoma, sans-serif
+            position: absolute
+            color: white
+            font-weight: 700
+            font-size: 1.2em
+            bottom: 30px
+            text-transform: uppercase
+            text-decoration: underline
+            z-index: 2
+            &:hover
+                cursor: pointer
+    .qyteti
+        position: absolute
+        bottom: 0
+        height: 50%
+        width: 100%
+        background: url("../../styles/banner_template_skyline.png")

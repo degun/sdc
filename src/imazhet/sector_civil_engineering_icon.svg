@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="Untitled-Page%201" viewBox="0 0 100 100" style="background-color:#ffffff00" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="100px" height="100px"
+>
+	<g id="Layer%201">
+		<path id="Ellipse" d="M 0 50 C 0 22.3855 22.3854 0 50 0 C 77.6145 0 100 22.3855 100 50 C 100 77.6145 77.6145 100 50 100 C 22.3854 100 0 77.6145 0 50 Z" fill="#f0f0f0"/>
+		<path d="M 24 54.6117 C 24 54.6117 26.4752 31 49.3111 31 C 72.147 31 75 53.838 75 54.2428 " stroke="#33cbe3" stroke-width="7" fill="none"/>
+		<path d="M 32 68 L 66 68 L 54 40 L 44 40 L 32 68 Z" fill="#33cbe3"/>
+		<path d="M 49 68 L 49 62 " stroke="#ffffff" stroke-width="2" fill="none"/>
+		<path opacity="0.8" d="M 49 57 L 49 53 " stroke="#ffffff" stroke-width="2" fill="none"/>
+		<path opacity="0.6" d="M 49 49 L 49 46 " stroke="#ffffff" stroke-width="2" fill="none"/>
+		<path opacity="0.4" d="M 49 42 L 49 40 " stroke="#ffffff" stroke-width="2" fill="none"/>
+	</g>
+</svg>

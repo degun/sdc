@@ -1,0 +1,16 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+
+.IconText
+    @extend %flex-center
+    flex-direction: column
+    img 
+        width: 150px
+        transition: 0.1s transform ease-in
+    h4 
+        font-size: 2em
+        color: $ezeze
+        margin-bottom: 0
+    &.hovered
+        img
+            transform: translateY(-7px)

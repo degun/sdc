@@ -1,0 +1,35 @@
+@import "../../../styles/colors.sass"
+@import "../../../styles/theUsuals.sass"
+    
+    
+.SkedeKontakti
+    position: absolute
+    box-sizing: border-box
+    @extend %flex-between
+    flex-direction: column
+    align-items: flex-start
+    width: 350px
+    height: 70%
+    top: 15%
+    left: calc((100% - 960px)/2)
+    padding: 20px
+    z-index: 3
+    background-color: white
+    border-radius: 15px
+    box-shadow: 13px 13px 45px -15px rgba(0,0,0,0.25)
+    @media screen and (max-width: 960px)
+        left: calc((100% - 350px)/2)
+    table 
+        margin-top: -50px
+        td
+            padding: 5px 0
+        td:nth-child(odd)
+            vertical-align: top
+            width: 30%
+        td:nth-child(even)
+            font-weight: 700
+    a 
+        text-decoration: none
+        color: #666
+        &:hover
+            color: #000

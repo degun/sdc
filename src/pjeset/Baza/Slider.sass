@@ -1,0 +1,35 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+
+#Slider
+    height: 700px
+    position: relative
+    overflow: hidden
+    .container
+        height: 100%
+        width: 100%
+        position: relative
+        img 
+            height: 100%
+            width: 100%
+            object-fit: cover
+            position: absolute
+    .dots
+        position: absolute
+        bottom: 30px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: 2
+        .dot
+            border-radius: 50%
+            width: 16px
+            height: 16px
+            border: 1px solid white
+            margin: 3px
+            transition: 0.5s background-color ease-in-out
+            &:hover
+                cursor: pointer
+            &.selected
+                background-color: white

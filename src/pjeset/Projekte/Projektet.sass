@@ -1,0 +1,100 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+    
+#Projektet
+    width: 100%
+    padding: 70px 0
+    @extend %flex-center
+    flex-direction: column
+    h1 
+        font-size: 3em
+    .skedat
+        padding: 60px 0
+        width: 960px
+        @extend %flex-start-start
+        flex-wrap: wrap
+        a 
+            text-decoration: none
+            &:nth-child(3n+1)
+                .Skede
+                    margin-left: 0
+            &:nth-child(3n)
+                .Skede
+                    margin-right: 0
+        @media screen and (max-width: 960px)
+            width: 100%
+            a 
+                width: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                .Skede
+                    width: 80%
+                    margin: 20px
+                    margin-right: 20px
+                text-decoration: none
+                &:nth-child(3n+1)
+                    .Skede
+                        margin-left: 20px
+                &:nth-child(3n)
+                    .Skede
+                        margin-right: 20px
+                &:nth-child(2n+1)
+                    .Skede
+                        margin-right: 0px
+                &:nth-child(2n)
+                    .Skede
+                        margin-left: 0px
+        @media screen and (max-width: 600px)
+            width: 100%
+            a 
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                .Skede
+                    width: 80%
+                    margin: 20px
+                text-decoration: none
+                &:nth-child(3n+1)
+                    .Skede
+                        margin-left: 20px
+                &:nth-child(3n)
+                    .Skede
+                        margin-right: 20px
+                &:nth-child(2n+1)
+                    .Skede
+                        margin-right: 20px
+                &:nth-child(2n)
+                    .Skede
+                        margin-left: 20px
+    .tableAll
+        padding: 60px 0
+        width: 960px
+        @media screen and (max-width: 960px)
+            width: 100%
+        table 
+            border-collapse: collapse
+            thead 
+                background-color: $bluebukur
+                color: white
+                border: 1px solid #333
+                tr
+                    th 
+                        padding: 10px
+                        border: 1px solid $blupakecelur
+            tbody 
+                border: 1px solid #333
+                tr 
+                    &:hover
+                        background-color: #f5f5f5
+                    td 
+                        padding: 10px 15px
+                        border: 1px solid #ccc
+                        text-align: center
+                        &:nth-child(3)
+                            text-align: left
+                        p 
+                            margin: 5px 0
+
+    

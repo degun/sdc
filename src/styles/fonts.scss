@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Brandon Grotesque';
+    font-weight: 700;
+    src: url('./fonts/BrandonGrotesque-Bold.woff') format('woff'), /* Super Modern Browsers */
+        url('./fonts/BrandonGrotesque-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    font-weight: 500;
+    src: url('./fonts/BrandonGrotesque-Medium.woff') format('woff'), /* Super Modern Browsers */
+        url('./fonts/BrandonGrotesque-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    font-weight: 300;
+    src: url('./fonts/BrandonGrotesque-Thin.woff') format('woff'), /* Super Modern Browsers */
+        url('./fonts/BrandonGrotesque-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    font-weight: normal;
+    src: url('./fonts/BrandonGrotesque-Regular.woff') format('woff'), /* Super Modern Browsers */
+        url('./fonts/BrandonGrotesque-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}

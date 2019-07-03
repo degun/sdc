@@ -1,0 +1,31 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+
+.LlojetTabs
+    width: 100%
+    background-color: $blupakezene
+    @extend %flex-center
+    ul
+        @extend %flex-center
+        width: 960px
+        padding: 0
+        list-style-type: none
+        margin: 0
+        height: 80px
+        li 
+            @extend %flex-center
+            width: 50%
+            font-family: 'Brandon Grotesque', Verdana, Geneva, Tahoma, sans-serif
+            font-weight: normal
+            font-size: 1.3em
+            color: white
+            height: 100%
+            transition: 0.2s background-color ease-in
+            &:hover
+                cursor: pointer
+                background-color: $blupakecelur
+            &.selected
+                background-color: white
+                color: $ezeze
+                &:hover
+                    cursor: initial

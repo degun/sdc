@@ -1,0 +1,73 @@
+@import "../../styles/colors.sass"
+@import "../../styles/theUsuals.sass"
+
+#PersonDetaje
+    width: 100%
+    @extend %flex-between
+    flex-direction: column
+    padding: 60px 0
+    .përmbajtja
+        width: 960px
+        @media screen and (max-width: 1000px)
+            width: 100%
+        .koka
+            height: 300px
+            padding: 20px 0 60px 0
+            border-bottom: 1px solid #ccc
+            @extend %flex-start-start
+            @media screen and (max-width: 1000px)
+                padding: 40px
+            img 
+                width: 250px
+                height: 300px
+                border-radius: 15px
+                float: left
+                margin-right: 10px
+                object-fit: cover
+            .who
+                @extend %flex-center
+                flex-direction: column
+                width: 710px
+                height: 100%
+                h1,h3
+                    margin: 5px 0
+        .cv
+            padding: 40px 0
+            @media screen and (max-width: 960px)
+                padding: 40px
+            h1 
+                text-align: center
+                padding-bottom: 40px
+            .left
+                width: 100%
+                font-weight: 700
+                font-size: 1.1em
+            .right
+                ul 
+                    margin: 0
+                    li
+                        list-style-type: circle
+            table
+                margin: 10px 0
+                .left
+                    width: 270px
+                    vertical-align: top
+                    @media screen and (max-width: 960px)
+                        width: 130px
+                td:nth-child(even)
+                    font-size: 1.1em
+            .table
+                table 
+                    width: 600px
+                    margin: 30px
+                    border-collapse: collapse
+                    @media screen and (max-width: 960px)
+                        width: 100%
+                        margin-left: 0
+                    td, th 
+                        border: 1px solid #ccc
+                        padding: 5px 10px
+                        text-align: left
+                    td:nth-child(odd)
+                        width: 25%
+            
