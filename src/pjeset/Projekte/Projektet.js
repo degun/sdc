@@ -23,14 +23,11 @@ class Projektet extends Component{
             this.setState({offsetTop: this.tabela.offsetTop})
         }
     }
+
     render(){
         const {filter, projects, table} = this.props;
         const projekts = projects.filter(project => project.type === filter);
-        let head, body;
-        if(table){
-            head = table.head;
-            body=table.body
-        }
+        const { head, body } = table;
         return(
             <div id="Projektet">
                 <h1 className="titull">{filter[0].toUpperCase() + filter.slice(1)} projects</h1>
@@ -46,16 +43,16 @@ class Projektet extends Component{
                         return <Link key={project.id} to={`/projects/${project.id}`}><Skede title={short_name} properties={properties} /></Link>
                     }) : null}
                 </div>}
-                {filter === "all" && table && <div className="tableAll">
+                {filter === "all" && <div className="tableAll">
                     <table  ref={ref=>this.tabela=ref} style={{tableLayout: "fixed"}}>
-                        <thead>
+                        {head && <thead>
                             <tr>
                                 {head.map((th, i) => {
                                     return <th key={i}>{th}</th>
                                 })}
                             </tr>
-                        </thead>
-                        <tbody>
+                        </thead>}
+                        {body && <tbody>
                             {body.map((tr, i) => {
                                 return <tr key={i*7}>
                                     {tr.map((td, i) => {
@@ -69,7 +66,7 @@ class Projektet extends Component{
                                     })}
                                 </tr>
                             })}
-                        </tbody>
+                        </tbody>}
                     </table>
                 </div>}
             </div>

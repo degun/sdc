@@ -11,7 +11,7 @@ export const getProjects = () => {
 export const getTableOfProjects = () => {
     return dispatch => {
         axios.get("http://46.101.140.145:1337/table2s").then(res => {
-            let data = res.data.filter(d => d._id === "5d13341f3d9f7e3c6f4dfd35")[0]
+            let data = res.data[0] || {};
             dispatch({type: "GET_TABLE_OF_PROJECTS", data})
         })
     }

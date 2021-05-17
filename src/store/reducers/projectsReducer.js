@@ -1,7 +1,8 @@
 const defaultState = {
     projects: [],
     filter: "supervision",
-    selected: {}
+    selected: {},
+    table: {}
 }
 
 const projectsReducer = (state = defaultState, action) => {
