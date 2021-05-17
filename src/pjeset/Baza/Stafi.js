@@ -21,7 +21,7 @@ class Stafi extends Component{
                 <h1 className="titull">Staff members</h1>
                 <div className="skedat">
                     {members && members.map(({profile_picture, title, name, _id}) => {
-                        return <Link key={_id} to={`members/${_id}`}><Anetar src={`http://46.101.140.145:1337${profile_picture.url}`} emri={name} roli={title} /></Link>
+                        return <Link key={_id} to={`members/${_id}`}><Anetar src={`https://admin.sdc.com.al${profile_picture.url}`} emri={name} roli={title} /></Link>
                     })}
                 </div>
             </section>

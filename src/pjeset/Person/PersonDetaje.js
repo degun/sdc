@@ -10,7 +10,7 @@ class PersonDetaje extends Component{
             <div id="PersonDetaje">
                 <div className="përmbajtja">
                     <div className="koka">
-                        <img src={`http://46.101.140.145:1337${url}`} alt={name + " profile picture"} className="profile"/>
+                        <img src={`https://admin.sdc.com.al${url}`} alt={name + " profile picture"} className="profile"/>
                         <div className="who">
                             <h1>{name}</h1>
                             <h3>{title}</h3>

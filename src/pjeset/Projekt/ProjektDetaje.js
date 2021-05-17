@@ -19,7 +19,7 @@ class ProjektDetaje extends Component{
                 <div className="përmbajtja">
                     <div className="head_photos">
                         {head_photos.map((photo, i) => {
-                            return <Imazh key={i} photo_url={`http://46.101.140.145:1337${photo.url}`} short_name={short_name} />
+                            return <Imazh key={i} photo_url={`https://admin.sdc.com.al${photo.url}`} short_name={short_name} />
                         })}
                     </div>
                     {(description && typeofdescroption === "description") ? <p>{description.description}</p> : null}
@@ -44,7 +44,7 @@ class ProjektDetaje extends Component{
                     </table>
                     <div className="body_photos">
                         {body_photos.map((photo, i) => {
-                            return <Imazh key={i} photo_url={`http://46.101.140.145:1337${photo.url}`} short_name={short_name} />
+                            return <Imazh key={i} photo_url={`https://admin.sdc.com.al${photo.url}`} short_name={short_name} />
                         })}
                     </div>
                 </div>
